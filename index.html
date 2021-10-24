@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Loop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- BÀI 1 - Xuất số chẵn lẻ -->
+        <div id="bai_1" class="text-center py-5">
+            <h4 class="mt-4">Bài 1 - Xuất số chẵn lẻ</h4>
+            <p class="mb-4">Viết chương trình xuất danh sách số chẵn/ lẻ nhỏ hơn 100.</p>
+            <button type="button" class="btn btn-primary mr-3" id="btnCalc1_soChan">Xuất số chẵn</button>
+            <button type="button" class="btn btn-primary" id="btnCalc1_soLe">Xuất số lẻ</button>
+            <div id="result1_soChan" class="alert alert-success mt-3" role="alert">
+            </div>
+            <div id="result1_soLe" class="alert alert-success mt-3" role="alert">
+            </div>
+        </div>
+        <!-- Bài 2 - Đếm số chia hết cho 3 -->
+        <div id="bai_2" class="text-center py-5">
+            <h4 class="mt-4">Bài 2 - Đếm số chia hết cho 3</h4>
+            <p class="mb-4">Viết chương trình đếm số lượng số chia hết cho 3 nhỏ hơn 1000.</p>
+            <button type="button" class="btn btn-primary" id="btnCalc2_for">Đếm số lượng (sử dụng
+                For)</button>
+            <!-- <button type="button" class="btn btn-primary" id="btnCalc2_while">Đếm số lượng (sử dụng
+                While)</button> -->
+            <div id="result2" class="alert alert-success mt-3" role="alert">
+            </div>
+        </div>
+
+        <!-- Bài 3 - Tìm số -->
+        <div id="bai_3" class="text-center py-5">
+            <h4 class="mt-4">Bài 3 - Tìm số</h4>
+            <p class="mb-4"> Tìm số nguyên dương nhỏ nhất thỏa điều kiện:<br>1+2+3+...+n < 10,000.</p>
+                    <button type="button" class="btn btn-primary" id="btnCalc3">Tìm số</button>
+                    <div id="result3" class="alert alert-success mt-3" role="alert">
+                    </div>
+        </div>
+
+        <!-- Bài 4 - Tính tổng theo yêu cầu -->
+        <div id="bai_4" class="text-center py-5">
+            <h4 class="mt-4">Bài 4 - Tính tổng theo yêu cầu</h4>
+            <p class="mb-4">Nhập vào 2 giá trị x và n, xuất ra giá trị:<br>S(n) = x + x<sup>2</sup> +
+                x<sup>3</sup> + ... + x<sup>n</sup>.</p>
+            <div class="row w-50 mt-3 m-auto">
+                <div class="form-group col-6">
+                    <label for="Input_x">Nhập x:</label>
+                    <input type="number" class="form-control" id="Input_x">
+                </div>
+                <div class="form-group  col-6">
+                    <label for="Input_n">Nhập n:</label>
+                    <input type="number" class="form-control" id="Input_n">
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary mt-3" id="btnCalc4">Tính kết quả</button>
+            <div id="result4" class="alert alert-success mt-3" role="alert">
+            </div>
+        </div>
+
+        <!-- Bài 5 - Tính dãy số nhân (giai thừa)-->
+        <div id="bai_5" class="text-center py-5">
+            <h4 class="mt-4">Bài 5 - Tính dãy số nhân (giai thừa)</h4>
+            <p class="mb-4">Nhập vào n, xuất ra giá trị n! = 1*2*3*...*n.</p>
+            <div class="form-group w-25 m-auto">
+                <label for="B5_Input_n">Nhập n:</label>
+                <input type="number" class="form-control" id="B5_Input_n">
+            </div>
+            <button type="button" class="btn btn-primary mt-3" id="btnCalc5">Tính giai thừa</button>
+            <div id="result5" class="alert alert-success mt-3" role="alert">
+            </div>
+        </div>
+
+
+        <!-- Bài 6 - Tạo thẻ DIV -->
+        <div id="bai_6" class="text-center py-5">
+            <h4 class="mt-4">Bài 6 - Tạo thẻ DIV</h4>
+            <p class="mb-4">Tạo 10 thẻ DIV xen kẽ nhau, thẻ vị trí chẵn có background <span style="color: red;">màu
+                    đỏ</span> và thẻ lẻ thì có <span style="color: blue;">màu xanh</span>.</p>
+            <button type="button" class="btn btn-primary mt-3" id="btnCalc6">Tạo thẻ</button>
+            <div id="result6" class="alert alert-success mt-3">
+            </div>
+
+        </div>
+
+
+        <!-- Bài 7 - Tìm số nguyên tố -->
+        <div id="bai_7" class="text-center py-5">
+            <h4 class="mt-4">Bài 7 - Tìm số nguyên tố</h4>
+            <p class="mb-4">Nhập vào n, xuất ra các số nguyên tố nhỏ hơn hoặc bằng n.</p>
+            <div class="form-group w-25 m-auto">
+                <label for="B7_Input_n">Nhập n:</label>
+                <input type="number" class="form-control" id="B7_Input_n">
+            </div>
+            <button type="button" class="btn btn-primary mt-3" id="btnCalc7">Tìm số nguyên tố</button>
+            <div id="result7" class="alert alert-success mt-3" role="alert">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <!-- main js  -->
+    <script src="./Js/main.js"></script>
+</body>
+
+</html>

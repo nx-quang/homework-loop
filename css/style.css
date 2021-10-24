@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ddd;
+}
+#bai_1{
+    box-shadow: 0px 0px 35px rgb(0 0 0 / 19%);
+    margin-top: 35px;
+    background-color: #fff;
+}
+#bai_2, #bai_3, #bai_4, #bai_5, #bai_6, #bai_7{
+    box-shadow: 0px 0px 35px rgb(0 0 0 / 19%);
+    margin-top: 100px;
+    background-color: #fff;
+}
+#result1_soChan, #result1_soLe, #result2, #result3, #result4, #result5, #result6,#result7{
+    padding: 30px;
+    margin: 0 50px;
+}
